@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiveOfHope - Campaigns</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            color: white;
+            top: 0;
+        }
+
+        .left img {
+            height: 80px;
+        }
+
+        .mid .navbar {
+            color: white;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .mid .navbar li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .right .btn {
+            padding: 8px 14px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+        }
+
+        .campaign-page {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+
+        .campaign-page h1 {
+            text-align: center;
+        }
+
+        .campaign-page .page-text {
+            text-align: center;
+            color: greenyellow;
+            margin-bottom: 25px;
+        }
+
+        .campaign-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .campaign-card {
+            background-color: #fff;
+            border-radius: 8px;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+        }
+
+        .campaign-img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .campaign-title {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+
+        .campaign-desc {
+            margin: 0 0 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .campaign-progress {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .campaign-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .campaign-actions .btn {
+            flex: 1;
+            text-align: center;
+        }
+
+        .donate-btn {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .view-btn {
+            background-color: #6c757d;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: #222;
+            color: #eee;
+            margin-top: 40px;
+            padding: 30px 15px 10px;
+        }
+
+        .footer-wrap {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .footer .col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 13px;
+            padding-top: 10px;
+            border-top: 1px solid #444;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <img src="img/img.png" alt="">
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="campaigns.html">Campaign</a></li>
+                <li><a href="start_campaign.html">Start a Campaign</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <a href="login.html"><button class="btn">Login</button></a>
+        </div>
+    </header>
+
+    <main class="campaign-page">
+        <h1>Ongoing Campaigns</h1>
+        <p class="page-text">Choose a campaign and donate to help someone.</p>
+
+        <div class="campaign-list">
+
+            <div class="campaign-card">
+                <img src="https://shorturl.at/jDpQT" class="campaign-img">
+                <h2 class="campaign-title">Support Child Education</h2>
+                <p class="campaign-desc">Help 50 children get books and school fees.</p>
+                <div class="campaign-progress">
+                    <span>₹45,000 Raised</span>
+                    <span>₹1,00,000 Goal</span>
+                </div>
+                <div class="campaign-actions">
+                    <a href="donate.html" class="btn donate-btn">Donate</a>
+                    <a href="campaign-details.html" class="btn view-btn">Details</a>
+                </div>
+            </div>
+
+            <div class="campaign-card">
+                <img src="https://shorturl.at/UUFzj" class="campaign-img">
+                <h2 class="campaign-title">Medical Help for Family</h2>
+                <p class="campaign-desc">Support a family with high hospital bills.</p>
+                <div class="campaign-progress">
+                    <span>₹12,500 Raised</span>
+                    <span>₹80,000 Goal</span>
+                </div>
+                <div class="campaign-actions">
+                    <a href="donate.html" class="btn donate-btn">Donate</a>
+                    <a href="campaign-details.html" class="btn view-btn">Details</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-wrap">
+
+            <div class="col about">
+                <h3>HiveOfHope</h3>
+                <p>Bringing hope to those who need it most.</p>
+            </div>
+
+            <div class="col links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="campaign.html">Campaigns</a></li>
+                    <li><a href="start_campaign.html">Start a Campaign</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col social">
+                <h4>Find Us On</h4>
+                <ul>
+                    <li>Instagram</li>
+                    <li>LinkedIn</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+
+            <div class="col contact">
+                <h4>Contact</h4>
+                <p>Email: support@hiveofhope.org</p>
+                <p>Phone: +91 9876543210</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 HiveOfHope | All Rights Reserved
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
